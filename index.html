@@ -1,43 +1,78 @@
 <!DOCTYPE html>
-<html lang="ja-JP">
-    <head>
-        <meta charset="utf-8">
-        <title>Lazy Jiro - 神域プログラミング言語</title>
-        <link rel="stylesheet" type="text/css" href="css/style.css">
-        <script type="text/javascript" src="js/components/ace/ace.js"></script>
-        <script type="text/javascript" src="js/main.bundle.js"></script>
-    </head>
-    <body>
-        <div id="editor-wrapper">
-            <p>
-                <label for="sample">サンプル: </label>
-                <select name="sample" id="sample-select">
-                    <option value="none">--------</option>
-                    <option value="echo">echo</option>
-                    <option value="primes">素数</option>
-                    <option value="reverse">文字列反転</option>
-                    <option value="unlambda">Unlambda</option>
-                </select>
-                <button id="run-button">実行</button>
-                <button id="stop-button">中止</button>
-                <button id="translate-button">Lazy K から変換</button>
-                <a href="https://twitter.com/share" class="twitter-share-button" data-via="susisu2413">Tweet</a>
-            </p>
-            <div id="editor"></div>
-        </div>
-        <div id="toolbox">
-            <div id="input">
-                <p>入力</p>
-                <div id="input-editor"></div>
-            </div>
-            <div id="output">
-                <p>出力</p>
-                <div id="output-editor"></div>
-            </div>
-        </div>
-        <div id="message">
-            <p id="message-text"></p>
-        </div>
-        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-    </body>
+<html lang="en-US">
+	<head>
+		<meta charset="UTF-8">
+		<title>Susisu</title>
+		<link rel="stylesheet" type="text/css" href="./css/style.css">
+	</head>
+	<body>
+		<header id="page-header">
+			<nav id="page-nav">
+				<ul>
+					<li><a id="page-nav-about" href="#about">About</a></li>
+					<li><a id="page-nav-works" href="#works">Works</a></li>
+					<li><a id="page-nav-contact" href="#contact">Contact</a></li>
+				</ul>
+			</nav>
+		</header>
+		<div id="contents-wrapper">
+			<section id="about">
+				<h1>About Me</h1>
+				<p>
+					<img src="./imgs/kokeshi.png" width="256" height="256">
+					<img src="./imgs/salmon.png" width="256" height="256">
+				</p>
+				<p>Hello!</p>
+				<ul>
+					<li>I am <b>Susisu</b> (not "sushi" 🍣).</li>
+					<li>I like JavaScript, Haskell, <em>the late</em> Adobe Flash, and Kin-iro Mosaic.</li>
+					<li>I am an undergraduate student at <a href="http://www.osaka-u.ac.jp/" title="Osaka University">Osaka University</a>.</li>
+					<li>I am a member of <a href="http://oucc.org" title="OUCC-Web">Osaka University Computer Club (OUCC)</a>:
+					<a href="http://oucc.org/press/" title="OUCCPRESS">Blog</a>,
+					<a href="https://twitter.com/oucc" title="OUCC (@OUCC) on Twitter">Twitter</a>,
+					<a href="https://github.com/OUCC" title="GitHub - OUCC">GitHub</a></li>
+					<li>Twitter: <a href="https://twitter.com/susisu2413" title="@susisu2413 on Twitter">@susisu2413</a></li>
+					<li>GitHub: <a href="https://github.com/susisu" title="GitHub - susisu (Susisu)">susisu</a></li>
+					<li><a href="https://speakerdeck.com/susisu" title="Presentations by Susisu // Speaker Deck">Presentations</a> on Speaker Deck</li>
+					<li><a href="http://susisu.hatenablog.com" title="Object.create(null)">Blog</a></li>
+				</ul>
+			</section>
+			<section id="works">
+				<h1>Works</h1>
+				<h2>Loquat</h2>
+				<p>JavaScript parser combinator library,
+				almost clone of <a href="https://github.com/aslatter/parsec" title="GitHub - aslatter/parsec">Parsec</a> (with some fixes and improvements).</p>
+				<ul>
+					<li><a href="https://github.com/susisu/Loquat" title="GitHub - susisu/Loquat">GitHub</a></li>
+					<li><a href="https://www.npmjs.com/package/loquat" title="npm - loquat">npm</a></li>
+				</ul>
+				<pre>npm install -g loquat</pre>
+				<h2>milktea</h2>
+				<p>Functional object-oriented scripting language written in JavaScript.</p>
+				<ul>
+					<li><a href="https://github.com/susisu/milktea" title="GitHub - susisu/milktea">GitHub</a></li>
+					<li><a href="https://www.npmjs.com/package/milktea" title="npm - milktea">npm</a></li>
+				</ul>
+				<pre>npm install -g milktea</pre>
+				<h2>Lazy K-JS</h2>
+				<p>JavaScript <a href="https://tromp.github.io/cl/lazy-k.html" title="The Lazy K Programming Language">Lazy K</a> interpreter,
+				using <span class="pre">Promise</span> to realize lazy stream.</p>
+				<ul>
+					<li><a href="https://github.com/susisu/LazyK-JS" title="GitHub - susisu/LazyK-JS">GitHub</a></li>
+					<li><a href="https://www.npmjs.com/package/lazyk-js" title="npm - lazyk-js">npm</a></li>
+				</ul>
+				<pre>npm install -g lazyk-js</pre>
+				<h2>else?</h2>
+				<p>Some other works are found on <a href="https://github.com/susisu" title="GitHub - susisu (Susisu)">my GitHub page</a> :)</p>
+			</section>
+			<section id="contact">
+				<h1>Contact Me</h1>
+				<p>My e-mail address is <span class="pre">["susisu" + 19 * 127, "yahoo.co.jp"].join("@")</span> (evaluate as a JavaScript code).</p>
+				<p>or <a href="https://twitter.com/susisu2413" title="@susisu2413 on Twitter">Contact me on Twitter</a>!</p>
+			</section>
+		</div>
+		<footer id="page-footer">
+			<p>copyright (c) 2007-2015 Susisu</p>
+		</footer>
+	</body>
 </html>
