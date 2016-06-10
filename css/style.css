@@ -1,186 +1,30 @@
 @charset "utf-8";
 
 body {
-    background-color: #000000;
-    color           : #FFFFFF;
-    font-family     : "Hiragino Kaku Gothic Pro", sans-serif;
+    background-color: #ffffff;
+    color: #303030;
+    font-family: "Hiragino Kaku Gothic Pro", sans-serif;
     font-weight: lighter;
     font-size: 10.5pt;
-    margin          : 0pt;
-    padding         : 0pt;
 }
 
-a {
-    color: #8080FF;
+body > header {
+    width: 800px;
+    padding: 4px 16px;
+    margin: 8px auto;
 }
 
-a:visited, a:active {
-    color: #FF80FF;
+body > section {
+    width: 800px;
+    padding: 4px 16px;
+    margin: 8px auto;
+    background-color: #f0f0f0;
+    border-radius: 16px;
 }
 
-#page-header {
-    position  : fixed;
-    top       : 0pt;
-    width     : 100%;
-}
-
-#page-nav ul {
-    background-color: #000000;
-    list-style: none;
-    height    : 32pt;
-    margin    : 0pt;
-    padding   : 8pt 0pt 0pt;
+body > footer {
+    width: 800px;
+    padding: 4px 16px;
+    margin: 8px auto;
     text-align: center;
-}
-
-#page-nav::after {
-    background: linear-gradient(rgba(0, 0, 0, 1.0), rgba(0, 0, 0, 0.0));
-    background: -moz-linear-gradient(rgba(0, 0, 0, 1.0), rgba(0, 0, 0, 0.0));
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 1.0)), to(rgba(0, 0, 0, 0.0)));
-    content   : "";
-    display   : block;
-    height    : 32pt;
-    width     : 100%;
-}
-
-#page-nav ul li {
-    display: inline-block;
-    margin: 0pt 4pt;
-}
-
-#page-nav ul li a {
-    background-color: transparent;
-    border          : 1px solid #FFFFFF;
-    border-radius   : 32pt;
-    color           : #FFFFFF;
-    display         : block;
-    font-family     : "Futura", "Arial Black", sans-serif;
-    font-size       : 12pt;
-    height          : 64pt;
-    line-height     : 64pt;
-    text-align      : center;
-    text-decoration : none;
-    width           : 64pt;
-}
-
-#page-nav ul li a:hover {
-    animation       : anime-nav-hover 0.125s ease-out 0s 1 normal;
-    background-color: rgba(255, 255, 255, 0.5);
-}
-
-@keyframes anime-nav-hover {
-    0% {
-        background-color: rgba(255, 255, 255, 0.0);
-    }
-    100% {
-        background-color: rgba(255, 255, 255, 0.5);
-    }
-}
-
-#page-nav-about {
-    border: 1px solid #FF80C0 !important;
-}
-
-#page-nav-about:hover {
-    animation       : anime-nav-about-hover 0.125s ease-out 0s 1 normal !important;
-    background-color: rgba(255, 128, 192, 0.5) !important;
-}
-
-@keyframes anime-nav-about-hover {
-    0% {
-        background-color: rgba(255, 128, 192, 0.0);
-    }
-    100% {
-        background-color: rgba(255, 128, 192, 0.5);
-    }
-}
-
-
-#page-nav-works {
-    border: 1px solid #FFFF80 !important;
-}
-
-#page-nav-works:hover {
-    animation       : anime-nav-works-hover 0.125s ease-out 0s 1 normal !important;
-    background-color: rgba(255, 255, 128, 0.5) !important;
-}
-
-@keyframes anime-nav-works-hover {
-    0% {
-        background-color: rgba(255, 255, 128, 0.0);
-    }
-    100% {
-        background-color: rgba(255, 255, 128, 0.5);
-    }
-}
-
-#page-nav-contact {
-    border: 1px solid #80C0FF !important;
-}
-
-#page-nav-contact:hover {
-    animation       : anime-nav-contact-hover 0.125s ease-out 0s 1 normal !important;
-    background-color: rgba(128, 192, 255, 0.5) !important;
-}
-
-@keyframes anime-nav-contact-hover {
-    0% {
-        background-color: rgba(128, 192, 255, 0.0);
-    }
-    100% {
-        background-color: rgba(128, 192, 255, 0.5);
-    }
-}
-
-
-#contents-wrapper {
-    border-left : 1px solid rgba(255, 255, 255, 0.5);
-    border-right: 1px solid rgba(255, 255, 255, 0.5);
-    margin      : 0pt auto;
-    padding     : 8pt 0pt 16pt;
-    width       : 800px;
-}
-
-#contents-wrapper > section {
-    padding: 64pt 8pt 8pt;
-}
-
-#contents-wrapper h1 {
-    font-family: "Futura", "Arial Black", sans-serif;
-    font-size  : 24pt;
-}
-
-#contents-wrapper h2 {
-    font-family: "Futura", "Arial Black", sans-serif;
-    font-size  : 16pt;
-}
-
-#contents-wrapper h2::before {
-    color        : rgba(255, 255, 255, 0.5);
-    content      : ">";
-    padding-right: 4pt;
-}
-
-#contents-wrapper pre {
-    background-color: rgba(255, 255, 255, 0.25);
-    border          : 1px solid rgba(255, 255, 255, 0.5);
-    border-radius   : 8pt;
-    padding         : 8pt;
-}
-
-#contents-wrapper .pre {
-    background-color: rgba(255, 255, 255, 0.25);
-    border          : 1px solid rgba(255, 255, 255, 0.5);
-    border-radius   : 4pt;
-    font-family     : monospace;
-    padding         : 0pt 4pt;
-}
-
-#page-footer {
-    padding   : 64pt 0pt 32pt;
-    text-align: center;
-}
-
-#page-footer p {
-    font-size: 8pt;
 }
