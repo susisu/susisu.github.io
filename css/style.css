@@ -1,12 +1,20 @@
 @charset "utf-8";
 
+html {
+  background-color: #F08000;
+
+}
 body {
   font-family: "Hiragino Kaku Gothic Pro", sans-serif;
   background-color: #FFFFFF;
   color: #404040;
   margin-top: 0;
   margin-bottom: 0;
+  width: 960px;
+  margin-left: auto;
+  margin-right: auto;
   font-size: 12pt;
+  border-radius: 8px;
 }
 
 body > header, body > section, body > footer {
@@ -18,8 +26,9 @@ body > header, body > section, body > footer {
 body > header {
   background-color: #F08000;
   color: #FFFFFF;
-  text-align: right;
+  text-align: center;
   margin-bottom: 32px;
+  border-radius: 0px 0 8px 8px;
 }
 
 body > header h1 {
@@ -63,14 +72,20 @@ body > section .profile-icon {
   margin-left: 16px;
 }
 
+body > section .profile-icon img {
+  border-radius: 8px;
+}
+
 body > footer {
   background-color: #F08000;
   color: #FFFFFF;
-  text-align: right;
+  text-align: center;
+  border-radius: 8px 8px 0 0;
 }
 
 body > footer p {
   font-size: 10pt;
+  font-weight: bold;
   padding: 16px;
   margin: 0;
 }
