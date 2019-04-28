@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 html {
-  background-color: #F08000;
+  background-color: #FFFFFF;
 
 }
 body {
@@ -14,7 +14,6 @@ body {
   margin-left: auto;
   margin-right: auto;
   font-size: 12pt;
-  border-radius: 8px;
 }
 
 body > header, body > section, body > footer {
@@ -24,11 +23,9 @@ body > header, body > section, body > footer {
 }
 
 body > header {
-  background-color: #F08000;
-  color: #FFFFFF;
+  color: #F08000;
   text-align: center;
   margin-bottom: 32px;
-  border-radius: 0px 0 8px 8px;
 }
 
 body > header h1 {
@@ -77,10 +74,8 @@ body > section .profile-icon img {
 }
 
 body > footer {
-  background-color: #F08000;
-  color: #FFFFFF;
+  color: #F08000;
   text-align: center;
-  border-radius: 8px 8px 0 0;
 }
 
 body > footer p {
@@ -91,5 +86,5 @@ body > footer p {
 }
 
 body > footer a {
-  color: #FFFFFF;
+  color: #F08000;
 }
